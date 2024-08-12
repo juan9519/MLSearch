@@ -30,6 +30,7 @@ struct ProductDetailView: View {
                         Text(viewModel.product.conditionToShow)
                             .font(.subheadline)
                     }
+                    .padding(.top)
                     .padding(.horizontal)
                     
                     productImages
@@ -42,6 +43,8 @@ struct ProductDetailView: View {
                         
                         Text("Stock disponible: \(viewModel.product.availableQuantity)")
                         
+                        Divider()
+                        
                         Section {
                             descriptionView
                                 .padding(.vertical)
@@ -53,7 +56,7 @@ struct ProductDetailView: View {
                     .padding(.horizontal)
                 }
                 .frame(maxWidth: proxy.size.width)
-                
+                .clipShape(RoundedRectangle(cornerRadius: StyleConstants.cornerRadius))
             }
             .frame(maxWidth: proxy.size.width)
         }

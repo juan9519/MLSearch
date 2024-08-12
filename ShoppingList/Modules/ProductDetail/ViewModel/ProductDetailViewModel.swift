@@ -24,12 +24,6 @@ class ProductDetailViewModel: ObservableObject {
     }
 }
 
-// MARK: - Public methods
-
-extension ProductDetailViewModel {
-    
-}
-
 // MARK: - Private methods
 
 private extension ProductDetailViewModel {

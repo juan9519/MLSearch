@@ -15,6 +15,7 @@ struct SearchView: View {
     @StateObject private var viewModel = SearchViewModel()
     
     // MARK: - Body
+    
     var body: some View {
         VStack {
             if viewModel.loading {
@@ -32,7 +33,7 @@ struct SearchView: View {
             }
         }
         .padding()
-        .searchable(text: $viewModel.searchText, prompt: "Buscar") 
+        .searchable(text: $viewModel.searchText, prompt: "Buscar")
         .navigationTitle("Buscar")
         .onSubmit(of: .search) {
             viewModel.searchProduct()

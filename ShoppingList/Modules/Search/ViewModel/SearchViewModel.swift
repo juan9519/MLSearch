@@ -17,8 +17,6 @@ class SearchViewModel: ObservableObject {
     @Published var showError = false
     @Published var error: ToastModel?
     @Published var navigate: MainRouter.Route?
-    
-    private var cancellables = Set<AnyCancellable>()
 }
 
 // MARK: - Public methods

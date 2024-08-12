@@ -78,7 +78,7 @@ extension Product {
     
     static var testingProduct: Product {
         return Product(
-            id: "MLUTEST",
+            id: "MLU635767347",
             title: "Test título",
             condition: .new,
             thumbnail: "http://http2.mlstatic.com/D_814213-MLU74618649923_022024-I.jpg",
